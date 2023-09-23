@@ -38,11 +38,11 @@ footer, header, hgroup, menu, nav, section {
 	  }
 	  
 	  #item {
-		font-size: 30px;
-		font-family: 'BioRhyme', serif;
+		font-size: 50px;
+		font-family: 'Baskerville', serif;
 		width: initial;
-		height: 40px;
-		line-height: 40px;
+		height: 50px;
+		line-height: 50px;
 	  }
 	  
 	  
@@ -51,7 +51,7 @@ footer, header, hgroup, menu, nav, section {
 		position: absolute;
 		z-index: -1;
 		background-color: #F2BB05;
-		height: 40px; 
+		height: 50px; 
 		width: 0%;
 		transition: width 0.5s;
 		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -59,7 +59,7 @@ footer, header, hgroup, menu, nav, section {
 	  
 	  #item:hover #highlight{
 		/* hardcoded */
-		width: 300px; 
+		width: 352px; 
 	  }
 
 body {
@@ -203,8 +203,9 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	/*paragraph*/
 	p {
-		margin: 0 0 5rem 0;
+		margin: 0 0 2rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -215,7 +216,12 @@ input, select, textarea {
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
 	}
-
+	/*
+	.sectionTitle {
+		color: #ffffff;
+		font
+	}
+	*/
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -227,9 +233,11 @@ input, select, textarea {
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			padding-bottom: 0.08rem;
+			margin: 0 0 1rem 0;
+			font-size: 60px;
 		}
+
 
 	h1 {
 		font-size: 2.25rem;
@@ -1360,7 +1368,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 1rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}

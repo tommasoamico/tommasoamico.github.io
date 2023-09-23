@@ -23,26 +23,24 @@
       <!-- Header -->
       <header id="header">
           <img class = 'logo' src="/images/profilePicture.jpg"></img>
-          <!--<span class="icon fa-gem"></span>-->
         <div class="content">
           <div class="inner">
-            <h1 style="font-size: 55px;">Welcome to my webpage</h1>
-            <p style="text-transform: none; font-size: 35px;">
-              <div class="block">
-                <div id="item">
+            <h1 style="font-size: 55px; font-family: Baskerville">Welcome to my webpage</h1>
+            <p style="text-transform: none; font-size: 35px; font-family: Baskerville">
+                <div id="item"">
                   <div id="highlight"></div>
-                  <span>Hover to Highlight</span>
+                  <span>Tommaso Amico</span>
                 </div>
-              </div>
-              <stem style="font-size: 40px">Tommaso Amico</stem>, PhD student in Computer Science at the University of Aarhus
+              
+              PhD student in Computer Science at the University of Aarhus
             </p>
           </div>
         </div>
         <nav>
           <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#aboutMe">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#biathlonAzzurro">Biathlon</a></li>
             <li><a href="#contact">Contact</a></li>
             <!--<li><a href="#elements">Elements</a></li>-->
           </ul>
@@ -52,9 +50,9 @@
       <!-- Main -->
       <div id="main">
         <!-- Intro -->
-        <article id="intro">
-          <h2 class="major">Intro</h2>
-          <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+        <article id="aboutMe">
+          <h2 class="major">About Me</h2>
+          <span class="image main"><img src="images/aboutMe.jpg" alt="" /></span>
           <p>
             Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
             aliquam facilisis ante interdum congue. Integer mollis, nisl amet
@@ -77,9 +75,9 @@
           </p>
         </article>
 
-        <!-- Work -->
-        <article id="work">
-          <h2 class="major">Work</h2>
+        <!-- Projects -->
+        <article id="projects">
+          <h2 class="major">Projects</h2>
           <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
@@ -98,9 +96,9 @@
           </p>
         </article>
 
-        <!-- About -->
-        <article id="about">
-          <h2 class="major">About</h2>
+        <!-- Biathlon Azzurro -->
+        <article id="biathlonAzzurro">
+          <h2 class="major">Biathlon</h2>
           <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <p>
             Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
@@ -139,6 +137,7 @@
             </ul>
           </form>
           <ul class="icons">
+            <!--
             <li>
               <a href="#" class="icon brands fa-twitter"
                 ><span class="label">Twitter</span></a
@@ -149,13 +148,14 @@
                 ><span class="label">Facebook</span></a
               >
             </li>
+            -->
             <li>
-              <a href="#" class="icon brands fa-instagram"
-                ><span class="label">Instagram</span></a
+              <a href="https://www.linkedin.com/in/tommaso-amico-24610a231" class="icon brands fa-linkedin"
+                ><span class="label">Linkedin</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-github"
+              <a href="https://github.com/tommasoamico" class="icon brands fa-github"
                 ><span class="label">GitHub</span></a
               >
             </li>
@@ -473,11 +473,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       <!-- Footer -->
       <footer id="footer">
         <p class="copyright">
-          &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+          &copy; <span id="year"></span>. All rights reserved.
+          <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+          </script>
         </p>
       </footer>
     </div>
-
+    <!--
+    © <span id="year"></span>. All rights reserved.
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    -->
     <!-- BG -->
     <div id="bg"></div>
 
