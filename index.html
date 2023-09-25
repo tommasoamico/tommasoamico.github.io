@@ -90,24 +90,42 @@
           <h2 class="major">Projects</h2>
           <span class="image main"><img src="images/projects.jpg" alt="" /></span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            In this section I present a brief overview to some of the projects I've worked with in the past. <br>
+            Most of them were developed during my studies and involved team work, you can explore them in more detail by clicking on the "Read more" button
+            that usually links to the Github repository of the project.
           </p>
           <div class="card">
             <div class="container">
-              <h4><b></b></h4> 
-              <p></p> 
+              <h3><b>Koln traffic regulator with <a href="https://www.dask.org">Dask</a></b></h3>
+              <img src="images/koln.png" class="cardPic" style="margin-left: auto; margin-right: auto; display: block; background-color: aliceblue; border: 1px solid;"></img> 
+              <p style="display: inline-block; vertical-align: top; font-family: Baskerville; margin-top: 5px;">This work starts from a project
+                 jointly developed by <a href="https://www.ibm.com">IBM</a> and by the German city of Koln thought to be a first step towards traffic
+                  regulation and an efficient exploitation of transport's resources. The mobility is emulated with <a href="https://sumo.dlr.de/docs/index.html">SUMO</a>,
+                   an open-source traffic simulation suite which allows generating the movement around a predefined city road map,
+                    extracting the data for the analysis from past traffic scenarios.</p> 
+                    <p style="display: inline-block; vertical-align: top; font-family: Baskerville;">
+                      With the aid of <a href="https://www.dask.org">Dask</a>, through some Cloud Veneto virtual machine we analyze the 20<em>GB</em>
+                      dataset to extract information before visualizing a live traffic map of the city of Koln highlighting stressed areas
+                      at different moments of the simulated period.
+                    </p>
+                    <button class="button-56" role="button" style="color: black; font-family: Baskerville; text-transform: none;"><a href="https://github.com/tommasoamico/Koln_Traffic_Regulator_with_Parallel_Computing">Read more</a></button>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="container">
+              <h3><b>Single-cell lineages simulation with Haskell</a></b></h3>
+              <img src="images/cellLineages.jpg" class="cardPic" style="margin-left: auto; margin-right: auto; display: block; border: 1px solid; border-color: aliceblue;"></img> 
+              <p style="display: inline-block; vertical-align: top; font-family: Baskerville; margin-top: 5px;">
+                 During my master thesis, to study universality classes of single-cell lineages, simulations were needed.I found myself dealing with critical
+                 slowing down and thus, to reach convergence, very long lineages were key.<br>
+                 Although the first plain <em>Python</em> implementation worked fine I needed something more efficient. An <em>Haskell</em> implementation 
+                 was thus developed, exploiting the notion of monad computations and specifically of the <a href="https://hackage.haskell.org/package/transformers-0.6.1.1/docs/Control-Monad-Trans-State-Lazy.html">State Transformer</a> monad
+                The much needed speed up was achieved and the code was also made more readable exploiting the features of pure functional code provided by 
+                the <em>Haskell</em> language.
+
+                    </p>
+                    <button class="button-56" role="button" style="color: black; font-family: Baskerville; text-transform: none;"><a href="https://github.com/tommasoamico/masterThesis/tree/main/code/simulationsHaskell">Read more</a></button>
             </div>
           </div>
         </article>
