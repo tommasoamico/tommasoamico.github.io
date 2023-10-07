@@ -38,6 +38,7 @@
             </p>
           </div>
         </div>
+       
         <nav>
           <ul>
             <li><a href="#aboutMe">About me</a></li>
@@ -46,7 +47,23 @@
             <li><a href="#contact">Contact</a></li>
             <!--<li><a href="#elements">Elements</a></li>-->
           </ul>
+          </ul>
         </nav>
+        <div style="margin-top: 15px;">
+          <ul class="icons">
+            <li>
+              <a href="https://www.linkedin.com/in/tommaso-amico-24610a231" class="icon brands fa-linkedin"
+                ><span class="label">Linkedin</span></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/tommasoamico" class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </div>
+         
       </header>
 
       <!-- Main -->
@@ -117,7 +134,7 @@
               <h3><b>Single-cell lineages simulation with Haskell</a></b></h3>
               <img src="images/cellLineages.jpg" class="cardPic" style="width : 50%; margin-left: auto; margin-right: auto; display: block; border: 1px solid; border-color: aliceblue;"></img> 
               <p style="display: inline-block; vertical-align: top; font-family: Baskerville; margin-top: 5px;">
-                 During my master thesis, to study universality classes of single-cell lineages, simulations were needed.I found myself dealing with critical
+                 During my master thesis, to study universality classes of single-cell lineages, simulations were needed. I found myself dealing with critical
                  slowing down and thus, to reach convergence, very long lineages were key.<br>
                  Although the first plain <em>Python</em> implementation worked fine I needed something more efficient. An <em>Haskell</em> implementation 
                  was thus developed, exploiting the notion of monad computations and specifically of the <a href="https://hackage.haskell.org/package/transformers-0.6.1.1/docs/Control-Monad-Trans-State-Lazy.html">State Transformer</a> monad
@@ -125,7 +142,24 @@
                 the <em>Haskell</em> language.
 
                     </p>
-                    <button class="button-56" role="button" style="width : 50%; color: black; font-family: Baskerville; text-transform: none;"><a href="https://github.com/tommasoamico/masterThesis/tree/main/code/simulationsHaskell">Read more</a></button>
+                    <button class="button-56" role="button" style="color: black; font-family: Baskerville; text-transform: none;"><a href="https://github.com/tommasoamico/masterThesis/tree/main/code/simulationsHaskell">Read more</a></button>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="container">
+              <h3><b>Skeletal bone age assessment</a></b></h3>
+              <img src="images/xRay.png" class="cardPic" style="width : 50%; margin-left: auto; margin-right: auto; display: block; border: 1px solid; border-color: aliceblue;"></img> 
+              <em>Image credit goes to the <a href = "https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/rsna-pediatric-bone-age-challenge-2017">original paper</a></em>
+              <p style="display: inline-block; vertical-align: top; font-family: Baskerville; margin-top: 5px;">
+                 The project's goal was to correctly retrieve the correct skeletal bone age from <em>X-ray</em> images as labeled by medical experts. Data was collected by different U.S. hospitals and was made public in a 
+                    challenge aimed at imporoving performances and algorithms on the subject.<br>
+                    The best perfoming solution implemented was a module called the <em>ICE</em> module: already 
+                    implemented by one of the challenge competitors with the aim of mantaining fined grained features throughout the architecture. 
+                    
+
+                    </p>
+                    <button class="button-56" role="button" style="color: black; font-family: Baskerville; text-transform: none;"><a href="https://github.com/tommasoamico/masterThesis/tree/main/code/simulationsHaskell">Read more</a></button>
             </div>
           </div>
         </article>
@@ -149,52 +183,33 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="POST"
+              action="mailto: tommaso99.amico@gmail.com"
+              enctype="application/x-www-form-urlencoded">
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name"/>
               </div>
               <div class="field half">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
+                <input type="text" name="email" id="email"/>
               </div>
               <div class="field">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="4"></textarea>
               </div>
             </div>
+            <!--action="mailto:tommaso99.amico@gmail.com" method="post" enctype="text/plain"-->
             <ul class="actions">
               <li>
-                <input type="submit" value="Send Message" class="primary" />
+        
+                <input type="submit" value="Send Message" class="primary" href="mailto:tommaso99.amico@gmail.com"/>
               </li>
               <li><input type="reset" value="Reset" /></li>
             </ul>
           </form>
-          <ul class="icons">
-            <!--
-            <li>
-              <a href="#" class="icon brands fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands fa-facebook-f"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            -->
-            <li>
-              <a href="https://www.linkedin.com/in/tommaso-amico-24610a231" class="icon brands fa-linkedin"
-                ><span class="label">Linkedin</span></a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/tommasoamico" class="icon brands fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-          </ul>
+          
         </article>
 
         <!-- Elements -->
