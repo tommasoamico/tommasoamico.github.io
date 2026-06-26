@@ -1086,6 +1086,7 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
+
 		button:hover,
 		.button:hover {
 			background-color: rgba(255, 255, 255, 0.075);
@@ -1778,6 +1779,12 @@ input, select, textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+}
+.button-56:disabled {
+  background-color: #9ca3af;
+  color: #6b7280;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 .button-56:after {
